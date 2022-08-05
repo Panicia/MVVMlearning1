@@ -26,7 +26,9 @@ class FirstFragment : Fragment() {
     override fun onStart() {
         super.onStart()
         binding.buttonNext.setOnClickListener {
-            findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
+            var bundle = Bundle()
+            bundle.putString("key", "Some String")
+            findNavController().navigate(R.id.action_firstFragment_to_secondFragment, bundle)
         }
 
     }

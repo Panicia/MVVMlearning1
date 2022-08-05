@@ -13,8 +13,8 @@
         <action
             android:id="@+id/action_firstFragment_to_secondFragment"
             app:destination="@id/secondFragment"
-            app:enterAnim="@android:anim/accelerate_decelerate_interpolator"
-            app:exitAnim="@android:anim/accelerate_decelerate_interpolator" />
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
@@ -24,8 +24,8 @@
         <action
             android:id="@+id/action_secondFragment_to_firstFragment"
             app:destination="@id/firstFragment"
-            app:enterAnim="@android:anim/accelerate_interpolator"
-            app:exitAnim="@android:anim/anticipate_interpolator" />
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
         <action
             android:id="@+id/action_secondFragment_to_thirdFragment2"
             app:destination="@id/thirdFragment"
@@ -40,7 +40,7 @@
         <action
             android:id="@+id/action_thirdFragment_to_secondFragment"
             app:destination="@id/secondFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim" />
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
     </fragment>
 </navigation>

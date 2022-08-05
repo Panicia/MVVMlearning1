@@ -19,12 +19,13 @@ class SecondFragment : Fragment() {
     ): View {
 
         binding = FragmentSecondBinding.inflate(layoutInflater)
-
         return binding.root
     }
 
     override fun onStart() {
         super.onStart()
+
+        binding.textView.text= arguments?.getString("key")
 
         binding.buttonNext.setOnClickListener {
             findNavController().navigate(R.id.action_secondFragment_to_thirdFragment2)
