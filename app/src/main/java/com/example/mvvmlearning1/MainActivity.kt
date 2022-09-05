@@ -2,15 +2,9 @@ package com.example.mvvmlearning1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.animation.Transformation
 import androidx.lifecycle.*
-import androidx.navigation.NavController
-import androidx.navigation.Navigation
-import androidx.navigation.findNavController
 import com.example.mvvmlearning1.databinding.ActivityMainBinding
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
+
 
 
 class MainActivity : AppCompatActivity() {
